@@ -1,0 +1,20 @@
+#about_content {
+	width: 900px;
+	height: 540px;
+	padding: 30px;
+	font-size: 16px;
+	line-height: 24px;
+	
+}
+
+#about_content h1{
+	font-size: 22px;
+}
+
+#about_content strong {
+	font-weight: bold;
+}
+
+#about_content p {
+	padding-bottom: 10px;
+}

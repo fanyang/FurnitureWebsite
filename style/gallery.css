@@ -1,0 +1,161 @@
+#body {
+	background-color: #ede7d7;
+	padding-top: 10px;
+}
+
+#gallery_title {
+	width: 860px;
+	height: 50px;
+	padding: 10px;
+	margin: 20px 40px;
+	text-align: center;
+	border-bottom: 1px solid #8e5a4f;
+}
+
+#gallery_img_frame {
+	width: 400px;
+	height: 300px;
+	float: left;
+	margin: 0 0 50px 50px;
+	border: 1px solid #000;
+	position: relative;
+}
+
+#gallery_img_frame:hover {
+	opacity: 0.85;
+	border: 1px solid #888;
+	cursor: pointer;
+}
+
+#gallery_img_pic {
+	width: 400px;
+	height: 300px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+#gallery_img_pic img {
+	max-width: 400px;
+	max-height: 300px;
+}
+
+#gallery_img_title {
+	width: 390px;
+	height: 30px;
+	padding: 5px;
+	background-color: #000;
+	position: absolute;
+	top: 250px;
+	color: #fff;
+	opacity: 0.7;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+#big_img_background {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: -9999;
+	opacity: 0;
+}
+
+#big_img {
+	display: block;
+	position: fixed;
+	width: 80%;
+	height: 80%;
+	top: 10%;
+	left: 10%;
+	background: #fff;
+	z-index: -99999;
+	opacity: 0;
+}
+
+#big_img_pic {
+	clear: both;
+	width: 96%;
+	height: 75%;
+	padding: 2%;
+	text-align: center;
+	overflow: hidden;
+}
+
+
+#big_img_pic img {
+	max-width: 95%;
+	max-height: 95%;	
+}
+
+#big_img h1 {
+	font-size: 20px;
+	margin: 30px;
+	float: left;
+}
+
+#big_img_close, #big_img_origin{
+	margin: 30px 30px 30px 0;
+	width: 17px;
+	height: 17px;
+	float: right;
+	background-color: #fff;
+}
+#big_img_close a, #big_img_origin a {
+	display: block;
+	height: 100%;
+}
+
+#big_img_close {
+	background: url("/img/common/imgzoom_tb.gif");
+	background-position: -80px 0;
+}
+#big_img_close:hover {
+	background-position: -80px -39px;
+}
+#big_img_origin {
+	background: url("/img/common/imgzoom_tb.gif");
+}
+#big_img_origin:hover {
+	background-position: 0 -39px;
+}
+
+
+#pager {
+	width: 810px;
+	height: 50px;
+	clear: both;
+	padding: 40px 0 40px 150px;
+}
+
+#pager li {
+	display: block;
+	height: 40px;
+	float: left;
+	padding-top: 10px;
+	padding-left: 20px;
+	font-size: 14px;
+}
+
+#pager ul {
+	float: left;
+	width: 620px;
+	height: 50px;
+	margin-left: 180px;
+}
+
+#pager a {
+	text-decoration: none;
+	color: #000;
+}
+#pager a:hover{
+	color: #ce8373;
+	text-decoration: underline;
+}
+
+
+
+
+
