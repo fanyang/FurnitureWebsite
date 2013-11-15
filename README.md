@@ -1,4 +1,11 @@
-CICMS
-=====
+Furniture Company Website
+=========================
 
-A furniture corp. website written by CodeIgniter.
+A CMS for company info and products management based on CodeIgniter PHP MVC framework.
+
+### Some Features
+* One product may have multiple pictures and thumbs.
+* Infinite category
+* Paging.
+* Send user comments to email.
+* Gallery.
