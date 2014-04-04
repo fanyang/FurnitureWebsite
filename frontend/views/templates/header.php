@@ -2,7 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php echo $title?></title>
+<title><?php echo $title?> - Commercial Seating for Restaurants, Bars, Lounges, and More</title>
+<meta name="Description" content="Commercial Restaurant Furnishings. Large Selection Of Chairs, Bar stools, Tables, and Custom Made Booths / Banquettes and The Most Competitive Prices. We also carry a wide range of lighting and led accent lighting products for the hospitality industry." />
+<meta name="Keywords" content="Commercial Restaurant Seating, Commercial Seating, Restaurant Seating, Chairs, Lounge Chairs, Metal Chairs, Wood Chairs, Lounge Chairs, Bar stools, Booths, Banquettes, Custom made, aluminum chairs, Pendant Light, Ceiling Mount Light, Chandelier, Wall Light, Lamp, Table Tops, Restaurant Chairs, restaurant tables," />
 	<link href="/style/reset.css" rel="stylesheet" type="text/css" />
 	<link href="/style/common.css?20130409" rel="stylesheet" type="text/css" />
 	<?php foreach ($css as $css_file):?>
@@ -34,8 +36,8 @@
 				 
 				<br />
 				<form action="<?php echo base_url('search');?>" method="post">
-					<input type="text" name="pid" value="Product Number"  maxlength="30" onfocus="this.value=''" onblur="if(!value){value=defaultValue;}" />
-					<input type="submit" name="submit" value="Search" />
+					<input type="search" name="pid" placeholder="Product Number"  maxlength="30" required />
+					<input type="submit" name="submit" value="Go" />
 				</form>
 					
 			</p>

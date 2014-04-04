@@ -23,13 +23,35 @@
 	<h1><img src="/img/home/latest.png" /></h1>
 	<h2><a href="/category"><img src="/img/home/more.gif" /></a></h2>
 	<div class="splitter"></div>
-	<?php foreach ($products as $product):?>
-		<div class="latest_product">
-			<a href="/product/<?php echo $product->id;?>" target="blank">
-			<img src="<?php echo $product->pic;?>" />
-			</a>
-			<p><?php echo $product->pname;?></p>
-		</div>
-	<?php endforeach;?>
+	<div id="latest_container">
+	<?php for ($i = 0; $i < 10; $i++):?>
+		<?php foreach ($products as $product):?>
+			<div class="latest_product">
+				<a href="/product/<?php echo $product->id;?>" target="blank">
+				<img src="<?php echo $product->pic;?>" />
+				</a>
+				<p><?php echo $product->pname;?></p>
+			</div>
+		<?php endforeach;?>
+	<?php endfor;?>
+	</div>
+	<script type="text/javascript">
+		var left = 0;
+		var speed = 30;
+		function scrollFunction() {
+			if(left-- < -19200) {
+				left = 0;
+			}
+			$("#latest_container").css("left", left + "px");
+		}
+		var scroll = setInterval(scrollFunction,speed);
+
+		$("#latest_container").mouseover(function() {
+			clearInterval(scroll);
+		});
+		$("#latest_container").mouseout(function() {
+			scroll = setInterval(scrollFunction,speed);
+		});
+	</script>
 	
 </div>

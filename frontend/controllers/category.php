@@ -26,6 +26,13 @@ class Category extends CI_Controller {
 		$this->load->view('templates/header', $header_data);
 		
 		$categories_array = $this->Category_model->get_categories_tree($category_id);
+		$top_category_id = $category_id;
+		if ($top_category_id > 3) {
+			$top_category_id = $this->Category_model->get_category_by_id($category_id);
+			$top_category_id = $top_category_id[0]->fid;
+		}
+		$data['top_category_id'] = $top_category_id;
+		
 		$this->load->model('Product_model');
 		$data['products_count'] = $this->Product_model->get_products_count_by_categories($categories_array);
 		$data['current_page'] = $page;

@@ -27,7 +27,7 @@
 
 <div id="products">
 	<div id="category_title"><h1><?php echo $category->cname;?></h1></div>
-	
+	<img src="/img/category/<?php echo $top_category_id;?>.jpg" width="640" height="260" />
 	<div id="products_list">
 	<?php foreach ($products as $product):?>
 		<div>

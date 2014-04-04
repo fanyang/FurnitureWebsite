@@ -43,17 +43,23 @@ body {
 	opacity: 0.85;
 }
 
-#header_content input[type="text"] {
-	height: 24px;
+#header_content input[type="search"] {
+	height: 30px;
 	width: 240px;
 	color: #aaa;
 	font-style: italic;
 	padding: 0 10px;
+	border-radius: 5px;
+	outline: none;
 }
 
 #header_content input[type="submit"] {
 	height: 30px;
 	width: 72px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #9FA380;
+	font-style: italic;
 }
 
 #main_nav {
@@ -74,6 +80,7 @@ body {
 #main_nav ul li a{
 	color: #fff;
 	font-size: 14px;
+	font-weight: bold;
 	text-decoration: none;
 	padding: 10px 45px;
 	height: 15px;

@@ -18,7 +18,7 @@ class Product_model extends CI_Model {
     	->where_in('p.id', $product_ids)
     	->get()->result();
 
-        
+    	
         return $latest_products;
     }
     

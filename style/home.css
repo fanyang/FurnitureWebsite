@@ -1,6 +1,6 @@
 #banner {
 	width: 960px;
-	height: 260px;
+	height: 320px;
 	overflow: hidden;
 	position: relative;
 	border-bottom: 1px #929677 solid;
@@ -21,6 +21,8 @@
 #latest {
 	margin: 10px 0 0 0;
 	height: 350px;
+	overflow: hidden;
+	position:relative;
 }
 
 #latest h1 {
@@ -42,6 +44,13 @@
 	margin: 5px auto;
 }
 
+#latest_container {
+	width: 19200px;
+	height:260px;
+	position: absolute;
+	overflow: hidden;
+}
+
 #latest div.latest_product {
 	width: 208px;
 	height: 260px;
@@ -50,19 +59,26 @@
 }
 #latest div.latest_product a {
 	display: table-cell;
-	border: 1px solid #dedede;
 	vertical-align: middle;
 	text-align: center;
 	width: 206px;
 	height: 206px;
 }
+
+#latest div.latest_product:hover {
+	color: #ce8373;
+}
+
 #latest div.latest_product a:hover {
-	opacity: 0.85;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 #latest div.latest_product p {
 	margin: 10px 2px;
 	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
 }
 
-
+	

@@ -16,6 +16,7 @@ class Category_model extends CI_Model {
     		$this->db->select('id, cname')
     		->from('category')
     		->where('fid', $i)
+    		->order_by('cname', 'ASC')
     		->get()
     		->result();
     	}
